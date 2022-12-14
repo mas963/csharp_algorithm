@@ -1,0 +1,16 @@
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\obj\Debug\net5.0\QuickSortAlgorithm.csproj.AssemblyReference.cache
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\obj\Debug\net5.0\QuickSortAlgorithm.GeneratedMSBuildEditorConfig.editorconfig
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\obj\Debug\net5.0\QuickSortAlgorithm.AssemblyInfoInputs.cache
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\obj\Debug\net5.0\QuickSortAlgorithm.AssemblyInfo.cs
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\obj\Debug\net5.0\QuickSortAlgorithm.csproj.CoreCompileInputs.cache
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\bin\Debug\net5.0\QuickSortAlgorithm.exe
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\bin\Debug\net5.0\QuickSortAlgorithm.deps.json
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\bin\Debug\net5.0\QuickSortAlgorithm.runtimeconfig.json
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\bin\Debug\net5.0\QuickSortAlgorithm.runtimeconfig.dev.json
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\bin\Debug\net5.0\QuickSortAlgorithm.dll
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\bin\Debug\net5.0\QuickSortAlgorithm.pdb
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\obj\Debug\net5.0\QuickSortAlgorithm.dll
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\obj\Debug\net5.0\refint\QuickSortAlgorithm.dll
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\obj\Debug\net5.0\QuickSortAlgorithm.pdb
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\obj\Debug\net5.0\QuickSortAlgorithm.genruntimeconfig.cache
+D:\csharp_algorithm\Algorithm_1\QuickSortAlgorithm\obj\Debug\net5.0\ref\QuickSortAlgorithm.dll
