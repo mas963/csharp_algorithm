@@ -2,6 +2,7 @@
 
 internal class Program
 {
+    // https://ankitsharmablogs.com/csharp-coding-questions-for-technical-interviews/
     private static void Main(string[] args)
     {
         //ReverseString("hello");
@@ -11,7 +12,7 @@ internal class Program
         //CountCharacter("hello");
         //removeDuplicate("charpcorner");
         //findAllSubstring("abcd");
-        //int[] sayilar = new int[] { 5, 6, 7, 8, 9 };
+        int[] sayilar = new int[] { 5, 6, 7, 8, 9 };
         //RotateLeft(sayilar);
         //RotateRight(sayilar);
         //if (FindPrime(47))
@@ -22,7 +23,16 @@ internal class Program
         //{
         //    Console.WriteLine("not prime");
         //}
-        SumOfDigits(168);
+        // SumOfDigits(168);
+        // FindSecondLargeInArray(sayilar);
+        // FindThirdLargoInArray(sayilar);
+        int[,] twoArray = new int[,] { { 1, 2, 3 }, { 4, 5, 6 } };
+        // MultiToSingle(twoArray);
+        int[] sayilarTwo = new int[] { 1, 2, 3, 4, 5, 6 };
+        // SingleToMulti(sayilarTwo, 2, 3);
+        FindAngleInTime(12,30);
+
+        Console.ReadKey();
     }
 
     // Q1: How to reverse a string?
@@ -219,7 +229,7 @@ internal class Program
         if (number == 1) return false;
         if (number == 2) return true;
         if (number % 2 == 0) return false;
-        168
+
         var squareRoot = (int)Math.Floor(Math.Sqrt(number));
 
         for (int i = 3; i <= squareRoot; i += 2)
@@ -240,5 +250,107 @@ internal class Program
             num /= 10;
         }
         Console.WriteLine(sum);
+    }
+
+    // Q12: how to find second largest integer in an array using only one loop?
+    static void FindSecondLargeInArray(int[] arr)
+    {
+        int max1 = int.MinValue; // -2147483648
+        int max2 = int.MinValue; // -2147483648
+
+        foreach (int i in arr)
+        {
+            if (i > max1)
+            {
+                max2 = max1;
+                max1 = i;
+            }
+            else if (i >= max2 && i != max1)
+            {
+                max2 = i;
+            }
+        }
+        Console.WriteLine(max2);
+    }
+
+    // Q13: how to find third largest integer in an array using only one loop?
+    static void FindThirdLargoInArray(int[] arr)
+    {
+        int max1 = int.MinValue;
+        int max2 = int.MinValue;
+        int max3 = int.MinValue;
+
+        foreach (int i in arr)
+        {
+            if (i > max1)
+            {
+                max3 = max2;
+                max2 = max1;
+                max1 = i;
+            }
+            else if (i > max2 && i != max1)
+            {
+                max3 = max2;
+                max2 = i;
+            }
+            else if (i > max3 && i != max2 && i != max1)
+            {
+                max3 = i;
+            }
+        }
+        Console.WriteLine(max3);
+    }
+
+    // Q14: how to convert a two-dimensional array to a one-dimensional array?
+    static void MultiToSingle(int[,] array)
+    {
+        int index = 0;
+        int width = array.GetLength(0); // 2 
+        int height = array.GetLength(1); // 3
+        int[] single = new int[width * height];
+
+        for (int y = 0; y < height; y++)
+        {
+            for (int x = 0; x < width; x++)
+            {
+                single[index] = array[x, y];
+                Console.Write(single[index] + " ");
+                index++;
+            }
+        }
+    }
+
+    // Q15: how to convert a one-dimensional array to a two-dimensional array?
+    static void SingleToMulti(int[] array, int row, int column)
+    {
+        int index = 0;
+        int[,] multi = new int[row, column];
+
+        for (int y = 0; y < row; y++)
+        {
+            for (int x = 0; x < column; x++)
+            {
+                multi[y, x] = array[index];
+                index++;
+                Console.Write(multi[y, x] + " ");
+            }
+            Console.WriteLine();
+        }
+    }
+
+    // Q16: how to find the angle between hour and minute hands of a clock at any given time?
+    static void FindAngleInTime(int hours, int mins)
+    {
+        double hourDegrees = (hours * 30) + (mins * 30.0 / 60);
+        double minuteDegrees = mins * 6;
+
+        double diff = Math.Abs(hourDegrees - minuteDegrees);
+
+        if (diff > 180)
+        {
+            diff = 360 - diff;
+        }
+
+        Console.WriteLine("the angle between hour hand and minute hand is {0} degrees", diff);
     }
 }

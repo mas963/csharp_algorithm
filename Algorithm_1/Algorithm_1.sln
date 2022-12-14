@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithm_1", "Algorithm_1\Algorithm_1.csproj", "{5862FD1E-05AA-471F-A7F4-AFE0A37B382A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithm_1", "Algorithm_1\Algorithm_1.csproj", "{5862FD1E-05AA-471F-A7F4-AFE0A37B382A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BubbleSortAlgorithm", "BubbleSortAlgorithm\BubbleSortAlgorithm.csproj", "{D40AA8F3-842C-44F7-BC87-81BC3E74E7F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuickSortAlgorithm", "QuickSortAlgorithm\QuickSortAlgorithm.csproj", "{066C97C7-8E3A-4431-951F-88056F18F35A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{5862FD1E-05AA-471F-A7F4-AFE0A37B382A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5862FD1E-05AA-471F-A7F4-AFE0A37B382A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5862FD1E-05AA-471F-A7F4-AFE0A37B382A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D40AA8F3-842C-44F7-BC87-81BC3E74E7F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D40AA8F3-842C-44F7-BC87-81BC3E74E7F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D40AA8F3-842C-44F7-BC87-81BC3E74E7F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D40AA8F3-842C-44F7-BC87-81BC3E74E7F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{066C97C7-8E3A-4431-951F-88056F18F35A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{066C97C7-8E3A-4431-951F-88056F18F35A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{066C97C7-8E3A-4431-951F-88056F18F35A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{066C97C7-8E3A-4431-951F-88056F18F35A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
